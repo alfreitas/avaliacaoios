@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AVAListarJogosRecentesViewController">
+            <connections>
+                <outlet property="imageProfile" destination="qQ0-md-PKV" id="DNd-lA-FOv"/>
+                <outlet property="lblNome" destination="26F-V3-sFF" id="1Zx-U4-JsW"/>
+                <outlet property="switchUsuario" destination="6Dy-P9-nDs" id="UZk-6L-1L9"/>
+                <outlet property="tblJogosRecentes" destination="r3M-M3-sZM" id="LGH-xn-kPS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26F-V3-sFF">
+                    <rect key="frame" x="106" y="65" width="214" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwV-x8-r7d">
+                    <rect key="frame" x="8" y="146" width="132" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="Yo9-vY-ivi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definir usuário Padrão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUI-Po-zi6">
+                    <rect key="frame" x="106" y="94" width="170" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Dy-P9-nDs">
+                    <rect key="frame" x="106" y="113" width="51" height="31"/>
+                    <connections>
+                        <action selector="gravaUsuario:" destination="-1" eventType="valueChanged" id="xPT-aB-mJQ"/>
+                    </connections>
+                </switch>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQ0-md-PKV" customClass="AVADownloadImageView">
+                    <rect key="frame" x="0.0" y="65" width="106" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="106" id="CCD-gK-BpI"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r3M-M3-sZM">
+                    <rect key="frame" x="0.0" y="163" width="320" height="405"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OwV-x8-r7d" firstAttribute="top" secondItem="GUI-Po-zi6" secondAttribute="bottom" constant="31" id="6fh-5F-DWr"/>
+                <constraint firstItem="OwV-x8-r7d" firstAttribute="top" secondItem="qQ0-md-PKV" secondAttribute="bottom" constant="2" id="752-m2-DTD"/>
+                <constraint firstItem="6Dy-P9-nDs" firstAttribute="top" secondItem="26F-V3-sFF" secondAttribute="bottom" constant="27" id="DYo-ZZ-UKm"/>
+                <constraint firstItem="qQ0-md-PKV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="E44-kp-WvU"/>
+                <constraint firstItem="qQ0-md-PKV" firstAttribute="centerY" secondItem="GUI-Po-zi6" secondAttribute="centerY" id="Exo-Iy-HcO"/>
+                <constraint firstItem="OwV-x8-r7d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="GXl-Cs-hy5"/>
+                <constraint firstAttribute="trailing" secondItem="GUI-Po-zi6" secondAttribute="trailing" constant="44" id="Gps-lQ-v7t"/>
+                <constraint firstItem="qQ0-md-PKV" firstAttribute="leading" secondItem="r3M-M3-sZM" secondAttribute="leading" id="KoH-VY-H2M"/>
+                <constraint firstItem="26F-V3-sFF" firstAttribute="leading" secondItem="qQ0-md-PKV" secondAttribute="trailing" id="N5w-t6-KHZ"/>
+                <constraint firstItem="26F-V3-sFF" firstAttribute="leading" secondItem="GUI-Po-zi6" secondAttribute="leading" id="OFR-zf-7Cw"/>
+                <constraint firstItem="GUI-Po-zi6" firstAttribute="top" secondItem="26F-V3-sFF" secondAttribute="bottom" constant="8" symbolic="YES" id="Val-wu-m6E"/>
+                <constraint firstItem="GUI-Po-zi6" firstAttribute="leading" secondItem="6Dy-P9-nDs" secondAttribute="leading" id="WWM-Ln-hi7"/>
+                <constraint firstItem="6Dy-P9-nDs" firstAttribute="bottom" secondItem="qQ0-md-PKV" secondAttribute="bottom" id="c79-yK-ImO"/>
+                <constraint firstItem="r3M-M3-sZM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gGa-EP-RQu"/>
+                <constraint firstItem="r3M-M3-sZM" firstAttribute="top" secondItem="6Dy-P9-nDs" secondAttribute="bottom" constant="19" id="gJC-Kh-2O5"/>
+                <constraint firstAttribute="trailing" secondItem="26F-V3-sFF" secondAttribute="trailing" id="iRr-Eu-adb"/>
+                <constraint firstItem="qQ0-md-PKV" firstAttribute="top" secondItem="26F-V3-sFF" secondAttribute="top" id="ixv-yv-AhX"/>
+                <constraint firstAttribute="bottom" secondItem="r3M-M3-sZM" secondAttribute="bottom" id="jqW-bi-1Zj"/>
+                <constraint firstItem="r3M-M3-sZM" firstAttribute="trailing" secondItem="26F-V3-sFF" secondAttribute="trailing" id="rwQ-be-jyj"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
