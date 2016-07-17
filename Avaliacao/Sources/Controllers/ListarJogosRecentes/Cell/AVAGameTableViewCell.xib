@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AVAGameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-xK-Teu">
+                        <rect key="frame" x="117" y="0.0" width="203" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="203" id="ofX-fe-031"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0oy-G8-yMt" customClass="AVADownloadImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="NP0-kh-3kn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-bJ-3CZ">
+                        <rect key="frame" x="117" y="22" width="203" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o5i-xK-Teu" firstAttribute="trailing" secondItem="EIp-bJ-3CZ" secondAttribute="trailing" id="0hr-am-T7a"/>
+                    <constraint firstItem="o5i-xK-Teu" firstAttribute="leading" secondItem="EIp-bJ-3CZ" secondAttribute="leading" id="5Ar-Lv-bPJ"/>
+                    <constraint firstItem="0oy-G8-yMt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7lp-eq-7a4"/>
+                    <constraint firstItem="EIp-bJ-3CZ" firstAttribute="top" secondItem="o5i-xK-Teu" secondAttribute="bottom" constant="1" id="9xK-kq-tnA"/>
+                    <constraint firstAttribute="trailing" secondItem="o5i-xK-Teu" secondAttribute="trailing" id="bkc-bP-BXN"/>
+                    <constraint firstItem="0oy-G8-yMt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ckA-XX-X93"/>
+                    <constraint firstItem="o5i-xK-Teu" firstAttribute="top" secondItem="0oy-G8-yMt" secondAttribute="top" id="fsD-Xw-Wuh"/>
+                    <constraint firstItem="0oy-G8-yMt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sIj-Ne-GGf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gameIcoImageView" destination="0oy-G8-yMt" id="eso-ow-u9Y"/>
+                <outlet property="lblMinutosJogados" destination="EIp-bJ-3CZ" id="I53-Lu-2hB"/>
+                <outlet property="lblNomeJogo" destination="o5i-xK-Teu" id="FNL-q3-B0Y"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
