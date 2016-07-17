@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[AVAListarJogosRecentesViewController viewDidAppear:]:AVAListarJogosRecentesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "!self.profile.steamid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AVAListarJogosRecentesViewController viewDidLoad]:AVAListarJogosRecentesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[steamIdRegistrada isEqualToString:steamId]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AVAListarJogosRecentesViewController viewWillAppear:]:AVAListarJogosRecentesViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AVAListarJogosRecentesViewController gravaUsuario:]:AVAListarJogosRecentesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.selected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AVAListarJogosRecentesViewController preencheCampos]:AVAListarJogosRecentesViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "profile.steamid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

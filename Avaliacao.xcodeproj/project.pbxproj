@@ -17,7 +17,6 @@
 		6907D7CB1D32D2E8000784C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7B41D32D2E7000784C5 /* AppDelegate.m */; };
 		6907D7CC1D32D2E8000784C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7B51D32D2E7000784C5 /* main.m */; };
 		6907D7CD1D32D2E8000784C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6907D7B91D32D2E8000784C5 /* Assets.xcassets */; };
-		6907D7D01D32D2E8000784C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7C91D32D2E8000784C5 /* ViewController.m */; };
 		6907D7D11D32D366000784C5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6907D7B11D32D2E7000784C5 /* Info.plist */; };
 		6907D7D41D32D649000784C5 /* AVASteamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7D31D32D649000784C5 /* AVASteamService.m */; };
 		6907D7F31D32DD77000784C5 /* AVAJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7D71D32DD77000784C5 /* AVAJsonParser.m */; };
@@ -33,8 +32,8 @@
 		6907D7FD1D32DD77000784C5 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7F01D32DD77000784C5 /* JSONKeyMapper.m */; };
 		6907D7FE1D32DD77000784C5 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7F21D32DD77000784C5 /* JSONValueTransformer.m */; };
 		6907D8011D330B67000784C5 /* AVAAmigo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D8001D330B67000784C5 /* AVAAmigo.m */; };
-		692D9A1C1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A1A1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m */; };
-		692D9A1D1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692D9A1B1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib */; };
+		692D9A1C1D3731B000DDC17E /* AVAListarJogosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A1A1D3731B000DDC17E /* AVAListarJogosViewController.m */; };
+		692D9A1D1D3731B000DDC17E /* AVAListarJogosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692D9A1B1D3731B000DDC17E /* AVAListarJogosViewController.xib */; };
 		692D9A201D3735C900DDC17E /* AVAGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A1F1D3735C900DDC17E /* AVAGame.m */; };
 		692D9A241D373DCF00DDC17E /* AVAGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A221D373DCF00DDC17E /* AVAGameTableViewCell.m */; };
 		692D9A251D373DCF00DDC17E /* AVAGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692D9A231D373DCF00DDC17E /* AVAGameTableViewCell.xib */; };
@@ -64,8 +63,6 @@
 		6907D7B91D32D2E8000784C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6907D7BD1D32D2E8000784C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6907D7BF1D32D2E8000784C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6907D7C81D32D2E8000784C5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6907D7C91D32D2E8000784C5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6907D7D21D32D649000784C5 /* AVASteamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVASteamService.h; sourceTree = "<group>"; };
 		6907D7D31D32D649000784C5 /* AVASteamService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVASteamService.m; sourceTree = "<group>"; };
 		6907D7D61D32DD77000784C5 /* AVAJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAJsonParser.h; sourceTree = "<group>"; };
@@ -94,9 +91,9 @@
 		6907D7F21D32DD77000784C5 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		6907D7FF1D330B67000784C5 /* AVAAmigo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAAmigo.h; sourceTree = "<group>"; };
 		6907D8001D330B67000784C5 /* AVAAmigo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAAmigo.m; sourceTree = "<group>"; };
-		692D9A191D3731B000DDC17E /* AVAListarJogosRecentesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAListarJogosRecentesViewController.h; sourceTree = "<group>"; };
-		692D9A1A1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAListarJogosRecentesViewController.m; sourceTree = "<group>"; };
-		692D9A1B1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAListarJogosRecentesViewController.xib; sourceTree = "<group>"; };
+		692D9A191D3731B000DDC17E /* AVAListarJogosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAListarJogosViewController.h; sourceTree = "<group>"; };
+		692D9A1A1D3731B000DDC17E /* AVAListarJogosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAListarJogosViewController.m; sourceTree = "<group>"; };
+		692D9A1B1D3731B000DDC17E /* AVAListarJogosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAListarJogosViewController.xib; sourceTree = "<group>"; };
 		692D9A1E1D3735C900DDC17E /* AVAGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAGame.h; sourceTree = "<group>"; };
 		692D9A1F1D3735C900DDC17E /* AVAGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAGame.m; sourceTree = "<group>"; };
 		692D9A211D373DCF00DDC17E /* AVAGameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAGameTableViewCell.h; sourceTree = "<group>"; };
@@ -219,8 +216,6 @@
 				6907D7C51D32D2E8000784C5 /* Helper */,
 				6907D7C61D32D2E8000784C5 /* Models */,
 				6907D7C71D32D2E8000784C5 /* Services */,
-				6907D7C81D32D2E8000784C5 /* ViewController.h */,
-				6907D7C91D32D2E8000784C5 /* ViewController.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -360,9 +355,9 @@
 			isa = PBXGroup;
 			children = (
 				692D9A0A1D372DE700DDC17E /* Cell */,
-				692D9A191D3731B000DDC17E /* AVAListarJogosRecentesViewController.h */,
-				692D9A1A1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m */,
-				692D9A1B1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib */,
+				692D9A191D3731B000DDC17E /* AVAListarJogosViewController.h */,
+				692D9A1A1D3731B000DDC17E /* AVAListarJogosViewController.m */,
+				692D9A1B1D3731B000DDC17E /* AVAListarJogosViewController.xib */,
 			);
 			path = ListarJogosRecentes;
 			sourceTree = "<group>";
@@ -493,7 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				692D9A251D373DCF00DDC17E /* AVAGameTableViewCell.xib in Resources */,
-				692D9A1D1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib in Resources */,
+				692D9A1D1D3731B000DDC17E /* AVAListarJogosViewController.xib in Resources */,
 				690024AE1D333DBC00A6C612 /* AVAListarAmigosViewController.xib in Resources */,
 				690024B71D33FB5300A6C612 /* AVAProfileViewCell.xib in Resources */,
 				6907D7D11D32D366000784C5 /* Info.plist in Resources */,
@@ -530,13 +525,12 @@
 				690024C11D34016000A6C612 /* NSString+AVANSString.m in Sources */,
 				6907D7FA1D32DD77000784C5 /* JSONAPI.m in Sources */,
 				690024BB1D33FE0700A6C612 /* AVADownloadImageView.m in Sources */,
-				6907D7D01D32D2E8000784C5 /* ViewController.m in Sources */,
 				6930A4C11D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodeld in Sources */,
 				6907D7F81D32DD77000784C5 /* JSONModelError.m in Sources */,
 				690024B11D33401200A6C612 /* AVAProfile.m in Sources */,
 				6907D7D41D32D649000784C5 /* AVASteamService.m in Sources */,
 				690024B61D33FB5300A6C612 /* AVAProfileViewCell.m in Sources */,
-				692D9A1C1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m in Sources */,
+				692D9A1C1D3731B000DDC17E /* AVAListarJogosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
