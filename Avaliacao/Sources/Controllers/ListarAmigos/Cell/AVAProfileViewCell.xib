@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AVAProfileViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MCC-o6-JbH" customClass="AVADownloadImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="51" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="grr-KU-Bgf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikt-Qs-Rlb">
+                        <rect key="frame" x="51" y="0.0" width="269" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="zHb-xy-3Yd"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dag-6d-Do7">
+                        <rect key="frame" x="51" y="21" width="269" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Dag-6d-Do7" secondAttribute="bottom" id="1H4-bN-aaB"/>
+                    <constraint firstAttribute="trailing" secondItem="ikt-Qs-Rlb" secondAttribute="trailing" id="2zh-TE-imP"/>
+                    <constraint firstItem="Dag-6d-Do7" firstAttribute="leading" secondItem="ikt-Qs-Rlb" secondAttribute="leading" id="7Si-pb-dxF"/>
+                    <constraint firstItem="Dag-6d-Do7" firstAttribute="trailing" secondItem="ikt-Qs-Rlb" secondAttribute="trailing" id="JFX-QM-DKV"/>
+                    <constraint firstItem="Dag-6d-Do7" firstAttribute="leading" secondItem="MCC-o6-JbH" secondAttribute="trailing" id="LBG-V7-Buw"/>
+                    <constraint firstItem="MCC-o6-JbH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RmF-KJ-Hd0"/>
+                    <constraint firstItem="Dag-6d-Do7" firstAttribute="bottom" secondItem="MCC-o6-JbH" secondAttribute="bottom" id="RsF-sP-NLs"/>
+                    <constraint firstItem="Dag-6d-Do7" firstAttribute="top" secondItem="ikt-Qs-Rlb" secondAttribute="bottom" id="XqS-Qw-Ay2"/>
+                    <constraint firstItem="MCC-o6-JbH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eak-bm-CVm"/>
+                    <constraint firstItem="MCC-o6-JbH" firstAttribute="top" secondItem="ikt-Qs-Rlb" secondAttribute="top" id="on5-GY-rGD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblNome" destination="ikt-Qs-Rlb" id="DyV-Le-eIK"/>
+                <outlet property="lblStatus" destination="Dag-6d-Do7" id="KSx-Gx-W42"/>
+                <outlet property="profileImageView" destination="MCC-o6-JbH" id="qmB-wK-xBP"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="203"/>
+        </tableViewCell>
+    </objects>
+</document>
