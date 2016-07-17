@@ -64,7 +64,7 @@ static NSString* cellIdentifier = @"Cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     AVAProfile *profile = listaProfiles[indexPath.row];
-    AVAListarJogosRecentesViewController *jogos = [[AVAListarJogosRecentesViewController alloc] init];
+    AVAListarJogosViewController *jogos = [[AVAListarJogosViewController alloc] init];
     [jogos setProfile:profile];
     
     [self.navigationController pushViewController:jogos animated:YES];

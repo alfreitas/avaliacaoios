@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AVAProfile.h"
 
-@interface AVAListarJogosRecentesViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface AVAListarJogosViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, assign) AVAProfile  *profile;
 

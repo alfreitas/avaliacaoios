@@ -10,7 +10,7 @@
 #import "AVADownloadImageView.h"
 #import "AVASteamService.h"
 #import "AVAGameTableViewCell.h"
-@interface AVAListarJogosRecentesViewController (){
+@interface AVAListarJogosViewController (){
 NSMutableArray<AVAGame> *listaGames;
 AVASteamService *service;
     NSString *steamId;
@@ -21,7 +21,7 @@ AVASteamService *service;
 @property (weak, nonatomic) IBOutlet UISwitch* switchUsuario;
 @end
 
-@implementation AVAListarJogosRecentesViewController
+@implementation AVAListarJogosViewController
 static NSString* cellIdentifier = @"Cell";
 
 - (void)viewDidLoad {

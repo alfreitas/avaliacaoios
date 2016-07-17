@@ -26,7 +26,7 @@
     //Criando as view controllers
     //recuperando NIB (XIB) pelo nome da classe automaticamente
     AVAListarAmigosViewController *listarAmigos = [[AVAListarAmigosViewController alloc] init];
-    AVAListarJogosRecentesViewController *listarJogos = [[AVAListarJogosRecentesViewController alloc] init];
+    AVAListarJogosViewController *listarJogos = [[AVAListarJogosViewController alloc] init];
     //PICSobreViewController *sobre = [[PICSobreViewController alloc] init];
     
     //Criando as navigations controllers
