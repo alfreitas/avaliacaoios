@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		690024AD1D333DBC00A6C612 /* AVAListarAmigosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690024AB1D333DBC00A6C612 /* AVAListarAmigosViewController.m */; };
+		690024AE1D333DBC00A6C612 /* AVAListarAmigosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690024AC1D333DBC00A6C612 /* AVAListarAmigosViewController.xib */; };
+		690024B11D33401200A6C612 /* AVAProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 690024B01D33401200A6C612 /* AVAProfile.m */; };
+		690024B61D33FB5300A6C612 /* AVAProfileViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 690024B41D33FB5300A6C612 /* AVAProfileViewCell.m */; };
+		690024B71D33FB5300A6C612 /* AVAProfileViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690024B51D33FB5300A6C612 /* AVAProfileViewCell.xib */; };
+		690024BB1D33FE0700A6C612 /* AVADownloadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 690024BA1D33FE0700A6C612 /* AVADownloadImageView.m */; };
+		690024C11D34016000A6C612 /* NSString+AVANSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 690024C01D34016000A6C612 /* NSString+AVANSString.m */; };
+		6907D7CB1D32D2E8000784C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7B41D32D2E7000784C5 /* AppDelegate.m */; };
+		6907D7CC1D32D2E8000784C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7B51D32D2E7000784C5 /* main.m */; };
+		6907D7CD1D32D2E8000784C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6907D7B91D32D2E8000784C5 /* Assets.xcassets */; };
+		6907D7D01D32D2E8000784C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7C91D32D2E8000784C5 /* ViewController.m */; };
+		6907D7D11D32D366000784C5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6907D7B11D32D2E7000784C5 /* Info.plist */; };
+		6907D7D41D32D649000784C5 /* AVASteamService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7D31D32D649000784C5 /* AVASteamService.m */; };
+		6907D7F31D32DD77000784C5 /* AVAJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7D71D32DD77000784C5 /* AVAJsonParser.m */; };
+		6907D7F41D32DD77000784C5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6907D7D91D32DD77000784C5 /* Info.plist */; };
+		6907D7F51D32DD77000784C5 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7DC1D32DD77000784C5 /* JSONModel.m */; };
+		6907D7F61D32DD77000784C5 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7DE1D32DD77000784C5 /* JSONModelArray.m */; };
+		6907D7F71D32DD77000784C5 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7E01D32DD77000784C5 /* JSONModelClassProperty.m */; };
+		6907D7F81D32DD77000784C5 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7E21D32DD77000784C5 /* JSONModelError.m */; };
+		6907D7F91D32DD77000784C5 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7E51D32DD77000784C5 /* NSArray+JSONModel.m */; };
+		6907D7FA1D32DD77000784C5 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7E91D32DD77000784C5 /* JSONAPI.m */; };
+		6907D7FB1D32DD77000784C5 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7EB1D32DD77000784C5 /* JSONHTTPClient.m */; };
+		6907D7FC1D32DD77000784C5 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7ED1D32DD77000784C5 /* JSONModel+networking.m */; };
+		6907D7FD1D32DD77000784C5 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7F01D32DD77000784C5 /* JSONKeyMapper.m */; };
+		6907D7FE1D32DD77000784C5 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D7F21D32DD77000784C5 /* JSONValueTransformer.m */; };
+		6907D8011D330B67000784C5 /* AVAAmigo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6907D8001D330B67000784C5 /* AVAAmigo.m */; };
+		692D9A1C1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A1A1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m */; };
+		692D9A1D1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692D9A1B1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib */; };
+		692D9A201D3735C900DDC17E /* AVAGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A1F1D3735C900DDC17E /* AVAGame.m */; };
+		692D9A241D373DCF00DDC17E /* AVAGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D9A221D373DCF00DDC17E /* AVAGameTableViewCell.m */; };
+		692D9A251D373DCF00DDC17E /* AVAGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692D9A231D373DCF00DDC17E /* AVAGameTableViewCell.xib */; };
+		6930A4C11D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6930A4BF1D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodeld */; };
+		6930A4C41D3A700F00BB57CC /* AVAUsuarioRegistrado.m in Sources */ = {isa = PBXBuildFile; fileRef = 6930A4C31D3A700F00BB57CC /* AVAUsuarioRegistrado.m */; };
+		6930A4CB1D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6930A4CA1D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.m */; };
+		6930A4CE1D3A72AB00BB57CC /* AVACoreDBData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6930A4CD1D3A72AB00BB57CC /* AVACoreDBData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		690024AA1D333DBC00A6C612 /* AVAListarAmigosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAListarAmigosViewController.h; sourceTree = "<group>"; };
+		690024AB1D333DBC00A6C612 /* AVAListarAmigosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAListarAmigosViewController.m; sourceTree = "<group>"; };
+		690024AC1D333DBC00A6C612 /* AVAListarAmigosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAListarAmigosViewController.xib; sourceTree = "<group>"; };
+		690024AF1D33401200A6C612 /* AVAProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAProfile.h; sourceTree = "<group>"; };
+		690024B01D33401200A6C612 /* AVAProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAProfile.m; sourceTree = "<group>"; };
+		690024B31D33FB5300A6C612 /* AVAProfileViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAProfileViewCell.h; sourceTree = "<group>"; };
+		690024B41D33FB5300A6C612 /* AVAProfileViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAProfileViewCell.m; sourceTree = "<group>"; };
+		690024B51D33FB5300A6C612 /* AVAProfileViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAProfileViewCell.xib; sourceTree = "<group>"; };
+		690024B91D33FE0700A6C612 /* AVADownloadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVADownloadImageView.h; sourceTree = "<group>"; };
+		690024BA1D33FE0700A6C612 /* AVADownloadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVADownloadImageView.m; sourceTree = "<group>"; };
+		690024BF1D34016000A6C612 /* NSString+AVANSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AVANSString.h"; sourceTree = "<group>"; };
+		690024C01D34016000A6C612 /* NSString+AVANSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AVANSString.m"; sourceTree = "<group>"; };
+		6907D7B11D32D2E7000784C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6907D7B31D32D2E7000784C5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6907D7B41D32D2E7000784C5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6907D7B51D32D2E7000784C5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6907D7B91D32D2E8000784C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6907D7BD1D32D2E8000784C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6907D7BF1D32D2E8000784C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6907D7C81D32D2E8000784C5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6907D7C91D32D2E8000784C5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6907D7D21D32D649000784C5 /* AVASteamService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVASteamService.h; sourceTree = "<group>"; };
+		6907D7D31D32D649000784C5 /* AVASteamService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVASteamService.m; sourceTree = "<group>"; };
+		6907D7D61D32DD77000784C5 /* AVAJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAJsonParser.h; sourceTree = "<group>"; };
+		6907D7D71D32DD77000784C5 /* AVAJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAJsonParser.m; sourceTree = "<group>"; };
+		6907D7D91D32DD77000784C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6907D7DB1D32DD77000784C5 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		6907D7DC1D32DD77000784C5 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		6907D7DD1D32DD77000784C5 /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		6907D7DE1D32DD77000784C5 /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		6907D7DF1D32DD77000784C5 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		6907D7E01D32DD77000784C5 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		6907D7E11D32DD77000784C5 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		6907D7E21D32DD77000784C5 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		6907D7E41D32DD77000784C5 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		6907D7E51D32DD77000784C5 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		6907D7E61D32DD77000784C5 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		6907D7E81D32DD77000784C5 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		6907D7E91D32DD77000784C5 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		6907D7EA1D32DD77000784C5 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		6907D7EB1D32DD77000784C5 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		6907D7EC1D32DD77000784C5 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		6907D7ED1D32DD77000784C5 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		6907D7EF1D32DD77000784C5 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		6907D7F01D32DD77000784C5 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		6907D7F11D32DD77000784C5 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		6907D7F21D32DD77000784C5 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		6907D7FF1D330B67000784C5 /* AVAAmigo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAAmigo.h; sourceTree = "<group>"; };
+		6907D8001D330B67000784C5 /* AVAAmigo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAAmigo.m; sourceTree = "<group>"; };
+		692D9A191D3731B000DDC17E /* AVAListarJogosRecentesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAListarJogosRecentesViewController.h; sourceTree = "<group>"; };
+		692D9A1A1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAListarJogosRecentesViewController.m; sourceTree = "<group>"; };
+		692D9A1B1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAListarJogosRecentesViewController.xib; sourceTree = "<group>"; };
+		692D9A1E1D3735C900DDC17E /* AVAGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAGame.h; sourceTree = "<group>"; };
+		692D9A1F1D3735C900DDC17E /* AVAGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAGame.m; sourceTree = "<group>"; };
+		692D9A211D373DCF00DDC17E /* AVAGameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAGameTableViewCell.h; sourceTree = "<group>"; };
+		692D9A221D373DCF00DDC17E /* AVAGameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAGameTableViewCell.m; sourceTree = "<group>"; };
+		692D9A231D373DCF00DDC17E /* AVAGameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVAGameTableViewCell.xib; sourceTree = "<group>"; };
+		6930A4C01D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UsuarioRegistrado.xcdatamodel; sourceTree = "<group>"; };
+		6930A4C21D3A700F00BB57CC /* AVAUsuarioRegistrado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAUsuarioRegistrado.h; sourceTree = "<group>"; };
+		6930A4C31D3A700F00BB57CC /* AVAUsuarioRegistrado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAUsuarioRegistrado.m; sourceTree = "<group>"; };
+		6930A4C91D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAUsuarioRegistrado+CoreDataProperties.h"; sourceTree = "<group>"; };
+		6930A4CA1D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAUsuarioRegistrado+CoreDataProperties.m"; sourceTree = "<group>"; };
+		6930A4CC1D3A72AB00BB57CC /* AVACoreDBData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVACoreDBData.h; sourceTree = "<group>"; };
+		6930A4CD1D3A72AB00BB57CC /* AVACoreDBData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVACoreDBData.m; sourceTree = "<group>"; };
+		6977824F1D32972B00F66EE7 /* Avaliacao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avaliacao.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6977824C1D32972A00F66EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		690024B21D33FA9600A6C612 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				690024B31D33FB5300A6C612 /* AVAProfileViewCell.h */,
+				690024B41D33FB5300A6C612 /* AVAProfileViewCell.m */,
+				690024B51D33FB5300A6C612 /* AVAProfileViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		690024B81D33FDDF00A6C612 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				690024B91D33FE0700A6C612 /* AVADownloadImageView.h */,
+				690024BA1D33FE0700A6C612 /* AVADownloadImageView.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6907D7B01D32D2E7000784C5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7B11D32D2E7000784C5 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6907D7B21D32D2E7000784C5 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7B31D32D2E7000784C5 /* AppDelegate.h */,
+				6907D7B41D32D2E7000784C5 /* AppDelegate.m */,
+				6907D7B51D32D2E7000784C5 /* main.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		6907D7B61D32D2E7000784C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7B71D32D2E7000784C5 /* html */,
+				6907D7B81D32D2E8000784C5 /* Imagens */,
+				6907D7BA1D32D2E8000784C5 /* json */,
+				6907D7BB1D32D2E8000784C5 /* UserInterface */,
+				6907D7C01D32D2E8000784C5 /* xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6907D7B71D32D2E7000784C5 /* html */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		6907D7B81D32D2E8000784C5 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7B91D32D2E8000784C5 /* Assets.xcassets */,
+			);
+			path = Imagens;
+			sourceTree = "<group>";
+		};
+		6907D7BA1D32D2E8000784C5 /* json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		6907D7BB1D32D2E8000784C5 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7BC1D32D2E8000784C5 /* LaunchScreen.storyboard */,
+				6907D7BE1D32D2E8000784C5 /* Main.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		6907D7C01D32D2E8000784C5 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		6907D7C11D32D2E8000784C5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6930A4BC1D3A6EE300BB57CC /* CoreData */,
+				6907D7C21D32D2E8000784C5 /* Categories */,
+				6907D7C31D32D2E8000784C5 /* Controllers */,
+				6907D7C51D32D2E8000784C5 /* Helper */,
+				6907D7C61D32D2E8000784C5 /* Models */,
+				6907D7C71D32D2E8000784C5 /* Services */,
+				6907D7C81D32D2E8000784C5 /* ViewController.h */,
+				6907D7C91D32D2E8000784C5 /* ViewController.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6907D7C21D32D2E8000784C5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				690024BF1D34016000A6C612 /* NSString+AVANSString.h */,
+				690024C01D34016000A6C612 /* NSString+AVANSString.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		6907D7C31D32D2E8000784C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				692D9A091D372DBC00DDC17E /* ListarJogosRecentes */,
+				6907D7C41D32D2E8000784C5 /* ListarAmigos */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6907D7C41D32D2E8000784C5 /* ListarAmigos */ = {
+			isa = PBXGroup;
+			children = (
+				690024B21D33FA9600A6C612 /* Cell */,
+				690024AA1D333DBC00A6C612 /* AVAListarAmigosViewController.h */,
+				690024AB1D333DBC00A6C612 /* AVAListarAmigosViewController.m */,
+				690024AC1D333DBC00A6C612 /* AVAListarAmigosViewController.xib */,
+			);
+			path = ListarAmigos;
+			sourceTree = "<group>";
+		};
+		6907D7C51D32D2E8000784C5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				690024B81D33FDDF00A6C612 /* Util */,
+				6907D7D51D32DD77000784C5 /* JSON */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6907D7C61D32D2E8000784C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7FF1D330B67000784C5 /* AVAAmigo.h */,
+				6907D8001D330B67000784C5 /* AVAAmigo.m */,
+				690024AF1D33401200A6C612 /* AVAProfile.h */,
+				690024B01D33401200A6C612 /* AVAProfile.m */,
+				692D9A1E1D3735C900DDC17E /* AVAGame.h */,
+				692D9A1F1D3735C900DDC17E /* AVAGame.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6907D7C71D32D2E8000784C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7D21D32D649000784C5 /* AVASteamService.h */,
+				6907D7D31D32D649000784C5 /* AVASteamService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6907D7D51D32DD77000784C5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7D61D32DD77000784C5 /* AVAJsonParser.h */,
+				6907D7D71D32DD77000784C5 /* AVAJsonParser.m */,
+				6907D7D81D32DD77000784C5 /* JSONModel */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		6907D7D81D32DD77000784C5 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7D91D32DD77000784C5 /* Info.plist */,
+				6907D7DA1D32DD77000784C5 /* JSONModel */,
+				6907D7E31D32DD77000784C5 /* JSONModelCategories */,
+				6907D7E61D32DD77000784C5 /* JSONModelLib.h */,
+				6907D7E71D32DD77000784C5 /* JSONModelNetworking */,
+				6907D7EE1D32DD77000784C5 /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		6907D7DA1D32DD77000784C5 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7DB1D32DD77000784C5 /* JSONModel.h */,
+				6907D7DC1D32DD77000784C5 /* JSONModel.m */,
+				6907D7DD1D32DD77000784C5 /* JSONModelArray.h */,
+				6907D7DE1D32DD77000784C5 /* JSONModelArray.m */,
+				6907D7DF1D32DD77000784C5 /* JSONModelClassProperty.h */,
+				6907D7E01D32DD77000784C5 /* JSONModelClassProperty.m */,
+				6907D7E11D32DD77000784C5 /* JSONModelError.h */,
+				6907D7E21D32DD77000784C5 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		6907D7E31D32DD77000784C5 /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7E41D32DD77000784C5 /* NSArray+JSONModel.h */,
+				6907D7E51D32DD77000784C5 /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		6907D7E71D32DD77000784C5 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7E81D32DD77000784C5 /* JSONAPI.h */,
+				6907D7E91D32DD77000784C5 /* JSONAPI.m */,
+				6907D7EA1D32DD77000784C5 /* JSONHTTPClient.h */,
+				6907D7EB1D32DD77000784C5 /* JSONHTTPClient.m */,
+				6907D7EC1D32DD77000784C5 /* JSONModel+networking.h */,
+				6907D7ED1D32DD77000784C5 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		6907D7EE1D32DD77000784C5 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7EF1D32DD77000784C5 /* JSONKeyMapper.h */,
+				6907D7F01D32DD77000784C5 /* JSONKeyMapper.m */,
+				6907D7F11D32DD77000784C5 /* JSONValueTransformer.h */,
+				6907D7F21D32DD77000784C5 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		692D9A091D372DBC00DDC17E /* ListarJogosRecentes */ = {
+			isa = PBXGroup;
+			children = (
+				692D9A0A1D372DE700DDC17E /* Cell */,
+				692D9A191D3731B000DDC17E /* AVAListarJogosRecentesViewController.h */,
+				692D9A1A1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m */,
+				692D9A1B1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib */,
+			);
+			path = ListarJogosRecentes;
+			sourceTree = "<group>";
+		};
+		692D9A0A1D372DE700DDC17E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				692D9A211D373DCF00DDC17E /* AVAGameTableViewCell.h */,
+				692D9A221D373DCF00DDC17E /* AVAGameTableViewCell.m */,
+				692D9A231D373DCF00DDC17E /* AVAGameTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6930A4BC1D3A6EE300BB57CC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6930A4BD1D3A6EE300BB57CC /* Entity */,
+				6930A4BE1D3A6EE300BB57CC /* Manager */,
+				6930A4BF1D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6930A4BD1D3A6EE300BB57CC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6930A4C21D3A700F00BB57CC /* AVAUsuarioRegistrado.h */,
+				6930A4C31D3A700F00BB57CC /* AVAUsuarioRegistrado.m */,
+				6930A4C91D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.h */,
+				6930A4CA1D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		6930A4BE1D3A6EE300BB57CC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6930A4CC1D3A72AB00BB57CC /* AVACoreDBData.h */,
+				6930A4CD1D3A72AB00BB57CC /* AVACoreDBData.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		697782461D32972800F66EE7 = {
+			isa = PBXGroup;
+			children = (
+				697782511D32972B00F66EE7 /* Avaliacao */,
+				697782501D32972B00F66EE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		697782501D32972B00F66EE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6977824F1D32972B00F66EE7 /* Avaliacao.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		697782511D32972B00F66EE7 /* Avaliacao */ = {
+			isa = PBXGroup;
+			children = (
+				6907D7B01D32D2E7000784C5 /* Config */,
+				6907D7B21D32D2E7000784C5 /* Misc */,
+				6907D7B61D32D2E7000784C5 /* Resources */,
+				6907D7C11D32D2E8000784C5 /* Sources */,
+			);
+			path = Avaliacao;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6977824E1D32972A00F66EE7 /* Avaliacao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697782691D32972C00F66EE7 /* Build configuration list for PBXNativeTarget "Avaliacao" */;
+			buildPhases = (
+				6977824B1D32972A00F66EE7 /* Sources */,
+				6977824C1D32972A00F66EE7 /* Frameworks */,
+				6977824D1D32972A00F66EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Avaliacao;
+			productName = Avaliacao;
+			productReference = 6977824F1D32972B00F66EE7 /* Avaliacao.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		697782471D32972800F66EE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AVA;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Cast Group";
+				TargetAttributes = {
+					6977824E1D32972A00F66EE7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6977824A1D32972900F66EE7 /* Build configuration list for PBXProject "Avaliacao" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 697782461D32972800F66EE7;
+			productRefGroup = 697782501D32972B00F66EE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6977824E1D32972A00F66EE7 /* Avaliacao */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6977824D1D32972A00F66EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692D9A251D373DCF00DDC17E /* AVAGameTableViewCell.xib in Resources */,
+				692D9A1D1D3731B000DDC17E /* AVAListarJogosRecentesViewController.xib in Resources */,
+				690024AE1D333DBC00A6C612 /* AVAListarAmigosViewController.xib in Resources */,
+				690024B71D33FB5300A6C612 /* AVAProfileViewCell.xib in Resources */,
+				6907D7D11D32D366000784C5 /* Info.plist in Resources */,
+				6907D7CD1D32D2E8000784C5 /* Assets.xcassets in Resources */,
+				6907D7F41D32DD77000784C5 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6977824B1D32972A00F66EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6907D7F51D32DD77000784C5 /* JSONModel.m in Sources */,
+				6930A4C41D3A700F00BB57CC /* AVAUsuarioRegistrado.m in Sources */,
+				6930A4CB1D3A726400BB57CC /* AVAUsuarioRegistrado+CoreDataProperties.m in Sources */,
+				6907D7F71D32DD77000784C5 /* JSONModelClassProperty.m in Sources */,
+				6907D7F31D32DD77000784C5 /* AVAJsonParser.m in Sources */,
+				6907D8011D330B67000784C5 /* AVAAmigo.m in Sources */,
+				6907D7CC1D32D2E8000784C5 /* main.m in Sources */,
+				692D9A201D3735C900DDC17E /* AVAGame.m in Sources */,
+				6907D7FC1D32DD77000784C5 /* JSONModel+networking.m in Sources */,
+				6907D7CB1D32D2E8000784C5 /* AppDelegate.m in Sources */,
+				6907D7F61D32DD77000784C5 /* JSONModelArray.m in Sources */,
+				692D9A241D373DCF00DDC17E /* AVAGameTableViewCell.m in Sources */,
+				6930A4CE1D3A72AB00BB57CC /* AVACoreDBData.m in Sources */,
+				6907D7FB1D32DD77000784C5 /* JSONHTTPClient.m in Sources */,
+				6907D7FD1D32DD77000784C5 /* JSONKeyMapper.m in Sources */,
+				6907D7F91D32DD77000784C5 /* NSArray+JSONModel.m in Sources */,
+				690024AD1D333DBC00A6C612 /* AVAListarAmigosViewController.m in Sources */,
+				6907D7FE1D32DD77000784C5 /* JSONValueTransformer.m in Sources */,
+				690024C11D34016000A6C612 /* NSString+AVANSString.m in Sources */,
+				6907D7FA1D32DD77000784C5 /* JSONAPI.m in Sources */,
+				690024BB1D33FE0700A6C612 /* AVADownloadImageView.m in Sources */,
+				6907D7D01D32D2E8000784C5 /* ViewController.m in Sources */,
+				6930A4C11D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodeld in Sources */,
+				6907D7F81D32DD77000784C5 /* JSONModelError.m in Sources */,
+				690024B11D33401200A6C612 /* AVAProfile.m in Sources */,
+				6907D7D41D32D649000784C5 /* AVASteamService.m in Sources */,
+				690024B61D33FB5300A6C612 /* AVAProfileViewCell.m in Sources */,
+				692D9A1C1D3731B000DDC17E /* AVAListarJogosRecentesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6907D7BC1D32D2E8000784C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6907D7BD1D32D2E8000784C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6907D7BE1D32D2E8000784C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6907D7BF1D32D2E8000784C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		697782671D32972C00F66EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		697782681D32972C00F66EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6977826A1D32972C00F66EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Avaliacao/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.Avaliacao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6977826B1D32972C00F66EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Avaliacao/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.Avaliacao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6977824A1D32972900F66EE7 /* Build configuration list for PBXProject "Avaliacao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697782671D32972C00F66EE7 /* Debug */,
+				697782681D32972C00F66EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697782691D32972C00F66EE7 /* Build configuration list for PBXNativeTarget "Avaliacao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6977826A1D32972C00F66EE7 /* Debug */,
+				6977826B1D32972C00F66EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6930A4BF1D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6930A4C01D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodel */,
+			);
+			currentVersion = 6930A4C01D3A6F3000BB57CC /* UsuarioRegistrado.xcdatamodel */;
+			path = UsuarioRegistrado.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 697782471D32972800F66EE7 /* Project object */;
+}
